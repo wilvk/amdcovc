@@ -1,0 +1,9 @@
+version: "3"
+services:
+  fedora27:
+    build:
+      context: .
+      dockerfile: Dockerfile-fedora27
+    volumes:
+      - ../..:/work
+    working_dir: /work
